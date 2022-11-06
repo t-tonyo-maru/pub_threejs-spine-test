@@ -21,10 +21,13 @@ window.onload = () => {
   let controls: OrbitControls;
   let lastFrameTime = Date.now() / 1000;
 
-  let baseUrl = "/assets/spine-data/";
-  let skeletonFile = "model.json";
-  let atlasFile = "model.atlas";
-  let animation = "animation";
+  const baseUrl =
+    process.env.NODE_ENV === "development"
+      ? "/assets/spine-data/"
+      : "/pub_threejs-spine-test/assets/spine-data/";
+  const skeletonFile = "model.json";
+  const atlasFile = "model.atlas";
+  const animation = "animation";
 
   const init = () => {
     let width = window.innerWidth;
