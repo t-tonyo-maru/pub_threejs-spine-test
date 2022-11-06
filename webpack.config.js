@@ -9,7 +9,7 @@ module.exports = (env, args) => {
     mode,
     target: ["web", "es5"],
     entry: {
-      main: `./src/main.ts`,
+      main: `./src/ts/main.ts`,
     },
     output: {
       filename: "[name].js",
