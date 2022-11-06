@@ -5,6 +5,11 @@
   "repository": "git@github.com:t-tonyo-maru/pub_threejs-spine-test.git",
   "author": "t-tonyo-maru",
   "license": "MIT",
+  "scripts": {
+    "build:webpack": "webpack",
+    "build-prod:webpack": "webpack --mode=production",
+    "watch:webpack": "webpack -w"
+  },
   "devDependencies": {
     "@types/node": "^18.11.9",
     "@types/three": "^0.144.0",
