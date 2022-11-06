@@ -77,7 +77,7 @@ window.onload = () => {
 
       // skeleton json
       const skeletonJson = new spine.SkeletonJson(atlasLoader);
-      skeletonJson.scale = 1;
+      skeletonJson.scale = 0.5;
 
       // skeleton data
       const skeletonData = skeletonJson.readSkeletonData(
