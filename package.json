@@ -6,6 +6,7 @@
   "author": "t-tonyo-maru",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist",
     "copy:static": "cpx 'src/static/**/*' 'dist/assets'",
     "build:webpack": "webpack",
     "build-prod:webpack": "webpack --mode=production",
