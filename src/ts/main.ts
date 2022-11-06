@@ -88,8 +88,6 @@ window.onload = () => {
       });
       skeletonMesh.state.setAnimation(0, animation, true);
 
-      // TODO: sample通りにコードを実装してみようとしたが、mesh.add()において、エラーが発生。これを解消したい。
-      // @ts-ignore
       mesh.add(skeletonMesh);
 
       requestAnimationFrame(render);
