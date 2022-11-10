@@ -39,7 +39,10 @@ window.onload = () => {
     // scene
     scene = new THREE.Scene();
     // renderer
-    renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      alpha: true,
+    });
     renderer.setSize(width, height);
     // bodyにcanvasを追加
     document.body.appendChild(renderer.domElement);
