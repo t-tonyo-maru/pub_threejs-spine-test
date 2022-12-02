@@ -88,9 +88,8 @@ window.onload = () => {
       );
 
       skeletonMesh = new spine.SkeletonMesh(skeletonData, (parameters) => {
-        parameters.depthTest = true;
-        parameters.depthWrite = true;
-        parameters.alphaTest = 0.001;
+        parameters.depthTest = false;
+        parameters.alphaTest = 0.5;
       });
       skeletonMesh.state.setAnimation(0, animation, true);
 
